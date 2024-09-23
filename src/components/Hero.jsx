@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import blobShape from '../assets/images/Blob Shape.svg'
 import semiCircle from '../assets/background/semi-circle.png'
@@ -9,6 +10,7 @@ import fab from '../assets/images/31-fab.png'
 import redVelvet from '../assets/images/red-velvet.png'
 
 const Hero = () => {
+  const whatsApp = 'https://wa.link/0zpjwq'
   return (
     <>
     <div className='bg-[#d37fcb] mt-1 pb-40 lg:hidden'>
@@ -17,7 +19,9 @@ const Hero = () => {
           <div className='absolute text-gray-100 flex flex-col items-center inset-3/4 left-0 right-0'>
             <h1 className='text-3xl w-[300px] text-center text-gray-200'><span className='text-[#562d52] '>Celebrate liv</span>e sweetness with Rachies Cakes</h1>
             <p className='text-sm w-[250px] mt-4 text-center'>From birthdays and weddings to corporate events and indulgence, Rachies cake has the perfect treat for you</p>
-            <button className='border px-2 py-1 mt-4 rounded-md'>Call to order</button>
+            <Link to={whatsApp}>
+            <button className='border px-2 py-1 mt-4 rounded-md'>Text to order</button>
+            </Link>
           </div>
        </div>
     </div>
@@ -28,7 +32,9 @@ const Hero = () => {
         <div className='text-white pl-4 w-[700px]'>
           <h2 className='text-[45px] w-[500px] leading-[40px] '>Celebrate life's sweetness with Rachies Cakes</h2>
           <p className='mt-4 w-[350px] text-[16px]'>From birthdays and weddings to corporate events and indulgence, Rachies cake has the perfect treat for you</p>
-          <button className='border px-2 py-1 mt-4 rounded-md'>Call to order</button>
+          <Link to={whatsApp}>
+          <button className='border px-2 py-1 mt-4 rounded-md'>Text to order</button>
+          </Link>
         </div>
 
         <div className=''>

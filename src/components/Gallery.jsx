@@ -44,7 +44,7 @@ const Gallery = () => {
             );
         } else if (activeSection === 'celebration') {
             return (
-                <div className='flex flex-row-reverse md:flex-row items-center px-4'>
+                <div className='flex flex-row-reverse md:flex-row items-center'>
                     <div className='flex flex-col justify-center ml-2 md:mr-7'>
                         <img src={frame21} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
                         <img src={frame22} className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
