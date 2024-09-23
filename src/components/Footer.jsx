@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+
+import companyLogo from '../assets/images/logo.svg'
 import whatsappLogo from '../assets/logos/ri_whatsapp-fill.png'
 import callLogo from '../assets/logos/call.png'
 import instagramLogo from '../assets/logos/Instagram - Negative.png'
@@ -19,7 +21,7 @@ const Footer = () => {
         <div className='flex items-center justify-center'>
             <div className='p-4 md:flex md:w-[700px] lgr:w-[1000px] flex-row justify-between'>
                 <div className='flex flex-col items-center md:items-start'>
-                    <img src="../src/assets/images/logo.svg" alt="logo" />
+                    <img src={companyLogo} alt="logo" />
                     <p className='w-[200px] text-center md:text-left text-gray-500 mt-2'>
                         Contact us today to make your sweetest dreams a reality.
                     </p>

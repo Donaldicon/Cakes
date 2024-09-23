@@ -1,18 +1,21 @@
 import React from 'react'
 
+import contactBg from '../assets/background/contact.png'
+import about from '../assets/background/about.png'
+
 const Contact = () => {
   return (
     <div className='mt-2' id='contact'>
         <div className='relative w-full'>
             <img 
-            src="../src/assets/background/contact.png" 
+            src={contactBg}
             className='w-full h-[500px] object-cover'
             alt="" />
             <div className='flex justify-center items-center absolute top-[120px] inset-x-0'>
                 <div className='text-white bg-[#FA57FF] md:bg-[#7D2675] flex flex-col items-center p-10' >
                     <h1 className='text-4xl mb-1'>Our Contact</h1>
                     <img 
-                    src="../src/assets/background/about.png" 
+                    src={about}
                     className='w-[170px] mb-5'
                     alt="" />
                     <div>

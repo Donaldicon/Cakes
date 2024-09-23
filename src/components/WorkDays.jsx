@@ -1,22 +1,25 @@
 import React from 'react'
 import VericalDots from './VericalDots'
+import work1 from '../assets/images/work1.png'
+import work2 from '../assets/images/work2.png'
+import work3 from '../assets/images/work3.png'
 
 const WorkDays = () => {
   return (
     <div className='flex items-center justify-center py-3'>
         <div className='flex flex-row justify-between items-start'>
             <img 
-            src="../src/assets/images/work1.png"
+            src={work1}
             className='w-[132px]' 
             alt="" />
             <VericalDots />
             <img 
-            src="../src/assets/images/work2.png" 
+            src={work2}
             className='w-[101px]'
             alt="" />
             <VericalDots />
             <img 
-            src="../src/assets/images/work3.png" 
+            src={work3}
             className='w-[175px]'
             alt="" />
         </div>

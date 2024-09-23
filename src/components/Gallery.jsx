@@ -1,6 +1,26 @@
 import React, { useState } from 'react';
 import spiralImage from '../assets/images/gallery-rose.png';
 
+import cookiesCake from '../assets/images/cookiescake.png'
+import chocolateCake from '../assets/images/chocolatecake.png'
+import redVelvet from '../assets/images/redvelvet.png'
+
+import frame21 from '../assets/images/frame2-1.png'
+import frame22 from '../assets/images/frame2-2.png'
+import frame23 from '../assets/images/frame2-3.png'
+
+import frame31 from '../assets/images/frame3-1.png'
+import frame32 from '../assets/images/frame3-2.png'
+import frame33 from '../assets/images/frame3-3.png'
+
+import frame41 from '../assets/images/frame4-1.png'
+import frame42 from '../assets/images/frame4-2.png'
+import frame43 from '../assets/images/frame4-3.png'
+
+import about from '../assets/background/about.png'
+import whiteBg from '../assets/images/white-bg.avif'
+
+
 const Gallery = () => {
     const [activeSection, setActiveSection] = useState('popular');
 
@@ -16,40 +36,40 @@ const Gallery = () => {
             return (
                 <div className='flex flex-row-reverse md:flex-row items-center px-4'>
                     <div className='flex flex-col justify-center ml-3 md:mr-7'>
-                        <img src="../src/assets/images/cookiescake.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-3 rounded-3xl '/>
-                        <img src="../src/assets/images/chocolatecake.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
+                        <img src={cookiesCake} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-3 rounded-3xl '/>
+                        <img src={chocolateCake} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
                     </div>
-                    <img src="../src/assets/images/redvelvet.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]' />
+                    <img src={redVelvet}alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]' />
                 </div>
             );
         } else if (activeSection === 'celebration') {
             return (
                 <div className='flex flex-row-reverse md:flex-row items-center px-4'>
                     <div className='flex flex-col justify-center ml-2 md:mr-7'>
-                        <img src="../src/assets/images/frame2-1.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
-                        <img src="../src/assets/images/frame2-2.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
+                        <img src={frame21} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
+                        <img src={frame22} className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
                     </div>
-                    <img src="../src/assets/images/frame2-3.png" alt="" className='w-[185px] lgr:w-[535px] md:w-[425px]' />
+                    <img src={frame23} alt="" className='w-[185px] lgr:w-[535px] md:w-[440px]' />
                 </div>
             );
         } else if (activeSection === 'wedding') {
             return (
                 <div className='flex flex-row-reverse md:flex-row items-center'>
                     <div className='flex flex-col justify-center ml-2 md:mr-7'>
-                        <img src="../src/assets/images/frame3-1.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
-                        <img src="../src/assets/images/frame3-2.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
+                        <img src={frame31} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
+                        <img src={frame32} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
                     </div>
-                    <img src="../src/assets/images/frame3-3.png" alt="" className='w-[185px] lgr:w-[535px] md:w-[440px]' />
+                    <img src={frame33} alt="" className='w-[185px] lgr:w-[535px] md:w-[440px]' />
                 </div>
             );
         } else if (activeSection === 'special') {
             return (
                 <div className='flex flex-row-reverse md:flex-row items-center'>
                     <div className='flex flex-col justify-center ml-2 md:mr-7'>
-                        <img src="../src/assets/images/frame4-1.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
-                        <img src="../src/assets/images/frame4-2.png" alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
+                        <img src={frame41} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-2 md:mb-5 rounded-xl'/>
+                        <img src={frame42} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
                     </div>
-                    <img src="../src/assets/images/frame4-3.png" alt="" className='w-[185px] lgr:w-[535px] md:w-[440px]' />
+                    <img src={frame43}alt="" className='w-[185px] lgr:w-[535px] md:w-[440px]' />
                 </div>
             );
         } else {
@@ -76,7 +96,7 @@ const Gallery = () => {
             {/* Mobile and smaller screens */}
             <div className='bg-white flex flex-col justify-center items-center px-2 py-4 md:hidden'>
                 <h1 className='text-5xl mb-2'>Gallery</h1>
-                <img src="../src/assets/background/about.png" className='w-[140px] mb-3' alt="" />
+                <img src={about} className='w-[140px] mb-3' alt="" />
                 <div className='flex w-[370px] justify-between items-center bg-blue-50 py-1 px-2 rounded-md mb-2'>
                     {navItems.map((sectionitems) => (
                         <div
@@ -107,13 +127,13 @@ const Gallery = () => {
                             backgroundPosition: getBackgroundPosition(),
                         }}
                     />
-                    <img src="../src/assets/images/white-bg.avif" 
-                    className='h-[600px] lgr:h-[750px]'
+                    <img src={whiteBg} 
+                    className='h-[640px] lgr:h-[750px]'
                     alt="" />
 
                     <div className='absolute top-0 flex flex-col items-center w-full'>
                         <h1 className='text-5xl mb-2'>Gallery</h1>
-                        <img src="../src/assets/background/about.png" className='w-[140px]' alt="" />
+                        <img src={about} className='w-[140px]' alt="" />
 
                         <div className='flex flex-col w-full items-center'>
                             <div className='flex justify-between w-full max-w-2xl relative'>

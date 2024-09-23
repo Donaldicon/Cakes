@@ -1,6 +1,12 @@
-
-
 import React, { useState } from 'react';
+
+import ratingImage from '../assets/images/rating.png'
+import julietImage from '../assets/images/Juliet.png'
+import geraldImage from '../assets/images/single3.jpg'
+import coupleImage from '../assets/images/couple.jpg'
+import testimonialsBg from '../assets/background/testimonials-bg.png'
+import about from '../assets/background/about.png'
+import quote from '../assets/background/quote.png'
 
 const Testimonials = () => {
     const [activeSlide, setActiveSlide] = useState('Juliet');
@@ -21,14 +27,14 @@ const Testimonials = () => {
                             {Array(5).fill().map((_, index) => (
                                 <img 
                                   key={index}
-                                  src="../src/assets/images/rating.png" 
+                                  src={ratingImage}
                                   className='w-[25px]'
                                   alt="rating"
                                 />
                             ))}
                         </div>
                         <img 
-                          src="../src/assets/images/Juliet.png" 
+                          src={julietImage} 
                           className='w-[80px] h-[80px] rounded-full'
                           alt="Juliet"
                         />
@@ -41,14 +47,14 @@ const Testimonials = () => {
                             {Array(5).fill().map((_, index) => (
                                 <img 
                                   key={index}
-                                  src="../src/assets/images/rating.png" 
+                                  src={ratingImage}
                                   className='w-[25px]'
                                   alt="rating"
                                 />
                             ))}
                         </div>
                         <img 
-                          src="../src/assets/images/single3.jpg" 
+                          src={geraldImage} 
                           className='w-[80px] h-[80px] rounded-full object-cover'
                           alt="Gerald"
                         />
@@ -61,14 +67,14 @@ const Testimonials = () => {
                             {Array(5).fill().map((_, index) => (
                                 <img 
                                   key={index}
-                                  src="../src/assets/images/rating.png" 
+                                  src={ratingImage}
                                   className='w-[25px]'
                                   alt="rating"
                                 />
                             ))}
                         </div>
                         <img 
-                          src="../src/assets/images/couple.jpg" 
+                          src={coupleImage}
                           className='w-[80px] h-[80px] rounded-full'
                           alt="Dave"
                         />
@@ -99,14 +105,15 @@ const Testimonials = () => {
     return (
         <div id='testimonials'>
             <div className='relative'>
-                <img src="../src/assets/background/testimonials-bg.png" 
+                <img 
+                src={testimonialsBg}
                 className='w-full h-[640px] lgr:h-[670px]'
                 alt="background" />
                 <div className='flex justify-center items-center mt-5 absolute top-4 inset-x-0'>
                     <div className='flex flex-col items-center'>
                         <h1 className='text-5xl mb-2'>Testimonials</h1>
                         <img 
-                          src="../src/assets/background/about.png" 
+                          src={about}
                           className='w-[240px] mb-2'
                           alt="about"
                         />
@@ -125,7 +132,7 @@ const Testimonials = () => {
                         <div className='my-5 md:flex flex-row w-[720px] lgr:w-[950px] justify-between items-center hidden' id='testimonials'>
                            <div className='w-[220px] lgr:w-[300px] flex flex-col relative'>
                                 <img 
-                                src="../src/assets/images/couple.jpg" 
+                                src={coupleImage}
                                 className='w-full rounded-t-xl'
                                 alt="" />
                                 <div className='bg-white px-2 py-8 rounded-b-xl'>
@@ -134,7 +141,7 @@ const Testimonials = () => {
                                 </div>
 
                                 <div className='h-[50px] w-[50px] rounded-full bg-gray-500 flex items-center justify-center absolute left-2 top-[195px] lgr:top-[275px]'>
-                                    <img src="../src/assets/background/quote.png" 
+                                    <img src={quote}
                                     className='w-[30px]'
                                     alt="" />
                                 </div>
@@ -142,7 +149,7 @@ const Testimonials = () => {
 
                            <div className='w-[220px] lgr:w-[300px] flex flex-col relative'>
                                 <img 
-                                src="../src/assets/images/single3.jpg" 
+                                src={geraldImage}
                                 className='w-full h-[220px] lgr:h-[300px] rounded-t-xl object-cover'
                                 alt="" />
                                 <div className='bg-white px-2 py-8 rounded-b-xl'>
@@ -151,7 +158,7 @@ const Testimonials = () => {
                                 </div>
 
                                 <div className='h-[50px] w-[50px] rounded-full bg-gray-500 flex items-center justify-center absolute left-2 top-[195px] lgr:top-[275px]'>
-                                    <img src="../src/assets/background/quote.png" 
+                                    <img src={quote}
                                     className='w-[30px]'
                                     alt="" />
                                 </div>
@@ -159,7 +166,7 @@ const Testimonials = () => {
 
                            <div className='w-[220px] lgr:w-[300px] flex flex-col relative'>
                                 <img 
-                                src="../src/assets/images/Juliet.png" 
+                                src={julietImage}
                                 className='w-full rounded-t-xl'
                                 alt="" />
                                 <div className='bg-white px-2 py-8 rounded-b-xl'>
@@ -168,7 +175,7 @@ const Testimonials = () => {
                                 </div>
 
                                 <div className='h-[50px] w-[50px] rounded-full bg-gray-500 flex items-center justify-center absolute left-2 top-[195px] lgr:top-[275px]'>
-                                    <img src="../src/assets/background/quote.png" 
+                                    <img src={quote}
                                     className='w-[30px] '
                                     alt="" />
                                 </div>
