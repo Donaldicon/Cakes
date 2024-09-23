@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import whatsappLogo from '../assets/logos/ri_whatsapp-fill.png'
+import callLogo from '../assets/logos/call.png'
+import instagramLogo from '../assets/logos/Instagram - Negative.png'
 import React from 'react';
 
 const whatsApp = 'https://wa.link/0zpjwq'
@@ -22,9 +25,9 @@ const Footer = () => {
                     </p>
                     <Link to={whatsApp}>
                         <div className='flex flex-row w-[90px] justify-between items-center mt-3'>
-                            <img src="../src/assets/logos/call.png" className='w-5' alt="call" />
-                            <img src="../src/assets/logos/ri_whatsapp-fill.png" className='w-5' alt="whatsapp" />
-                            <img src="../src/assets/logos/Instagram - Negative.png" className='w-5' alt="instagram" />
+                            <img src={callLogo} className='w-5' alt="call" />
+                            <img src={whatsappLogo} className='w-5' alt="whatsapp" />
+                            <img src={instagramLogo} className='w-5' alt="instagram" />
                         </div>
                     </Link>
                 </div>
