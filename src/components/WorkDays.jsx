@@ -10,17 +10,17 @@ const WorkDays = () => {
         <div className='flex flex-row justify-between items-start'>
             <img 
             src={work1}
-            className='w-[132px]' 
+            className='w-[100px] md:w-[132px]' 
             alt="" />
             <VericalDots />
             <img 
             src={work2}
-            className='w-[101px]'
+            className='w-[75px] md:w-[101px]'
             alt="" />
             <VericalDots />
             <img 
             src={work3}
-            className='w-[175px]'
+            className='w-[120px] md:w-[175px]'
             alt="" />
         </div>
     </div>

@@ -97,7 +97,7 @@ const Gallery = () => {
             <div className='bg-white flex flex-col justify-center items-center px-2 py-4 md:hidden'>
                 <h1 className='text-5xl mb-2'>Gallery</h1>
                 <img src={about} className='w-[140px] mb-3' alt="" />
-                <div className='flex w-[370px] justify-between items-center bg-blue-50 py-1 px-2 rounded-md mb-2'>
+                <div className='flex w-[350px] justify-between items-center bg-blue-50 py-1 px-2 rounded-md mb-2'>
                     {navItems.map((sectionitems) => (
                         <div
                         key={sectionitems.key}
