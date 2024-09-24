@@ -36,10 +36,10 @@ const Gallery = () => {
             return (
                 <div className='flex flex-row-reverse md:flex-row items-center px-4'>
                     <div className='flex flex-col justify-center ml-3 md:mr-7'>
-                        <img src={cookiesCake} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-3 rounded-3xl '/>
+                        <img src={cookiesCake} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px] mb-3 rounded-xl'/>
                         <img src={chocolateCake} alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]'/>
                     </div>
-                    <img src={redVelvet}alt="" className='w-[122px] lgr:w-[350px] md:w-[285px]' />
+                    <img src={redVelvet}alt="" className='w-[125px] lgr:w-[350px] md:w-[287px]' />
                 </div>
             );
         } else if (activeSection === 'celebration') {
