@@ -20,7 +20,7 @@ const WorkDays = () => {
             <VericalDots />
             <img 
             src={work3}
-            className='w-[120px] md:w-[175px]'
+            className='w-[110px] md:w-[175px]'
             alt="" />
         </div>
     </div>

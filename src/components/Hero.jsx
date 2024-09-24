@@ -13,7 +13,7 @@ const Hero = () => {
   const whatsApp = 'https://wa.link/0zpjwq'
   return (
     <>
-    <div className='bg-[#d37fcb] mt-1 pb-40 lg:hidden'>
+    <div className='bg-[#d37fcb] mt-1 pb-[200px] lg:hidden'>
        <div className='relative'>
           <img src={blobShape} alt="" className='w-3/5'/>
           <div className='absolute text-gray-100 flex flex-col items-center inset-3/4 left-0 right-0'>
